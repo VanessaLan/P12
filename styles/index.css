@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  margin: 50px 0px;
+  text-align: center;
+  font-family: "Tangerine", sans-serif;
+  font-size: 50px;
+}
+
+hr {
+  border: none;
+  border-top: #cc6699 solid 3px;
+  width: 50px;
+  margin: -50px auto 0px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+header h1 {
+  font-family: "Tangerine", sans-serif;
+  font-size: 70px;
+  color: #000000;
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Tangerine", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: #cc6699;
+  transition: width 0.4s;
+  transform-origin: left;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.7);
+}
+.banner .banner_content {
+  position: absolute;
+  text-align: center;
+}
+.banner .banner_content i {
+  font-size: 100px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.banner .banner_content h2 {
+  font-family: "Tangerine", sans-serif;
+  font-size: 70px;
+  color: #cc6699;
+}
+.banner .banner_content p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.about_container {
+  margin: 50px 100px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.about_container img {
+  height: 500px;
+}
+.about_container p {
+  line-height: 2em;
+  padding-bottom: 30px;
+}
+
+#competences {
+  background-color: #000000;
+}
+#competences h3 {
+  color: #ffffff;
+  padding-top: 50px;
+  margin: 0px;
+}
+#competences hr {
+  margin: 0px auto;
+}
+#competences .skill_card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 120px 0px;
+}
+#competences .skill_card_container .skill_card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: solid 2px #cc6699;
+  border-radius: 10px;
+}
+#competences .skill_card_container .skill_card p {
+  color: #ffffff;
+  margin-top: 5px;
+}
+#competences .skill_card_container .skill_card .skill_icon {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.project_card_container {
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  justify-content: center;
+  gap: 50px;
+}
+.project_card_container a {
+  text-decoration: none;
+  color: #000000;
+}
+.project_card_container .project_card {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.project_card_container .project_card img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project_card_container .project_card p {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  padding: 20px 0px;
+  background: #cc6699;
+  opacity: 0.7;
+  width: 100%;
+  font-family: "Tangerine", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: -80px;
+}
+.project_card_container .project_card:hover p {
+  margin-bottom: 0px;
+  transition: margin-bottom 0.4s;
+}
+.project_card_container .project_card:not(:hover) p {
+  transition: margin-bottom 0.4s;
+}
+
+footer {
+  background-color: #000000;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+footer .footer_icon {
+  font-size: 30px;
+  color: #ffffff;
+}
+footer .footer_icon:hover {
+  color: #cc6699;
+}/*# sourceMappingURL=index.css.map */
