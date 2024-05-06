@@ -169,7 +169,7 @@ header nav ul li a:hover::after {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.project_card_container .project_card p {
+.project_card_container .project_card h4 {
   position: absolute;
   bottom: 0px;
   text-align: center;
@@ -182,11 +182,11 @@ header nav ul li a:hover::after {
   font-weight: bold;
   margin-bottom: -80px;
 }
-.project_card_container .project_card:hover p {
+.project_card_container .project_card:hover h4 {
   margin-bottom: 0px;
   transition: margin-bottom 0.4s;
 }
-.project_card_container .project_card:not(:hover) p {
+.project_card_container .project_card:not(:hover) h4 {
   transition: margin-bottom 0.4s;
 }
 
@@ -204,4 +204,30 @@ footer .footer_icon {
 }
 footer .footer_icon:hover {
   color: #cc6699;
+}
+
+.modal {
+  margin: auto;
+  outline: none;
+  border-radius: 25px;
+  background: black;
+  border: 3px solid #cc6699;
+}
+.modal div {
+  height: 500px;
+  width: 700px;
+}
+.modal div i {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #cc6699;
+  cursor: pointer;
+}
+.modal div p {
+  padding: 50px;
+  color: white;
+}
+.modal::backdrop {
+  opacity: 0.9;
 }/*# sourceMappingURL=index.css.map */

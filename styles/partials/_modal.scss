@@ -1,0 +1,29 @@
+.modal {
+  margin: auto;
+  outline: none;
+  border-radius: 25px;
+  background: black;
+  border: 3px solid $tertiary_color;
+
+  div {
+    height: 500px;
+    width: 700px;
+
+    i {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 20px;
+        color: $tertiary_color;
+        cursor: pointer;
+      }
+
+    p {
+      padding: 50px;
+      color: white;
+    }
+  }
+
+  &::backdrop {
+    opacity: 0.9;
+  }
+}

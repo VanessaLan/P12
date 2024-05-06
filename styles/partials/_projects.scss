@@ -23,7 +23,7 @@
       object-fit: cover;
     }
 
-    p {
+    h4 {
       position: absolute;
       bottom: 0px;
       text-align: center;
@@ -38,14 +38,14 @@
     }
 
     &:hover {
-      p {
+      h4 {
         margin-bottom: 0px;
         transition: margin-bottom 0.4s;
       }
     }
 
     &:not(:hover) {
-      p {
+      h4 {
         transition: margin-bottom 0.4s;
       }
     }
