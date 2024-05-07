@@ -213,6 +213,9 @@ footer .footer_icon:hover {
   background: black;
   border: 3px solid #cc6699;
 }
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
 .modal .modal_content {
   height: 500px;
   width: 750px;

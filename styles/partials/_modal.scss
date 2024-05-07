@@ -5,6 +5,10 @@
   background: black;
   border: 3px solid $tertiary_color;
 
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .modal_content {
     height: 500px;
     width: 750px;
