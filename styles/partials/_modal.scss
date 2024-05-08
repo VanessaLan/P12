@@ -10,8 +10,10 @@
   }
 
   .modal_content {
-    height: 500px;
-    width: 750px;
+    height: 550px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
 
     .modal_header {
       display: flex;
@@ -42,6 +44,10 @@
       padding: 25px;
       color: white;
       margin: auto;
+
+      .span_modal_content {
+        font-weight: bold;
+      }
     }
 
     img {

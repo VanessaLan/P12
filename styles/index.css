@@ -217,8 +217,10 @@ footer .footer_icon:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 .modal .modal_content {
-  height: 500px;
-  width: 750px;
+  height: 550px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
 }
 .modal .modal_content .modal_header {
   display: flex;
@@ -246,6 +248,9 @@ footer .footer_icon:hover {
   padding: 25px;
   color: white;
   margin: auto;
+}
+.modal .modal_content p .span_modal_content {
+  font-weight: bold;
 }
 .modal .modal_content img {
   margin: auto;
@@ -302,7 +307,7 @@ footer .footer_icon:hover {
     gap: 70px;
   }
   .modal {
-    height: 300px;
+    height: 350px;
     width: 80%;
   }
   .modal .modal_content {
@@ -329,6 +334,10 @@ footer .footer_icon:hover {
   }
   .about_container {
     margin: 25px;
+  }
+  .modal {
+    height: 450px;
+    width: 85%;
   }
   .modal .modal_content p {
     font-size: 12px;
