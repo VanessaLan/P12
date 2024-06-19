@@ -87,6 +87,10 @@
         font-size: 25px;
         color: $secondary_color;
         padding-bottom: 15px;
+
+        &:hover {
+          color: $tertiary_color;
+        }
       }
     }
   }
